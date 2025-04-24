@@ -1,0 +1,206 @@
+[
+    {
+      "audience_segment": "Mindful Professional Women Skincare Essentialists",
+      "audience_segment_rules": [
+        {
+          "segment_group": "Professional Women 35-50",
+          "segment_group_sections": [
+            {
+              "segment_type": "Demographic",
+              "segment_category": "Gender",
+              "segments": [
+                "Female"
+              ]
+            },
+            {
+              "segment_type": "Demographic",
+              "segment_category": "Age",
+              "segments": [
+                "35-39",
+                "40-44",
+                "45-49",
+                "50-54"
+              ]
+            }
+          ],
+          "group_combiner": "AND"
+        },
+        {
+          "segment_group": "Wellness & Self-Care Interests",
+          "segment_group_sections": [
+            {
+              "segment_type": "Interest",
+              "segment_category": "Health",
+              "segments": [
+                "Women's Health",
+                "Holistic Health",
+                "Alternative Medicine",
+                "Nutrition"
+              ]
+            },
+            {
+              "segment_type": "Interest",
+              "segment_category": "Fashion",
+              "segments": [
+                "Beauty & Cosmetics",
+                "Personal Care"
+              ]
+            }
+          ],
+          "group_combiner": "OR"
+        },
+        {
+          "segment_group": "Skincare Purchase Intent",
+          "segment_group_sections": [
+            {
+              "segment_type": "Purchase Intent",
+              "segment_category": "Beauty",
+              "segments": [
+                "Skin Care",
+                "Hand & Body Lotion"
+              ]
+            },
+            {
+              "segment_type": "Purchase Intent",
+              "segment_category": "Seasonal",
+              "segments": [
+                "Fall Home Products"
+              ]
+            }
+          ],
+          "group_combiner": "OR"
+        }
+      ]
+    },
+    {
+      "audience_segment": "Wellness-Focused Women Seeking Simplicity",
+      "audience_segment_rules": [
+        {
+          "segment_group": "Professional Women 35-50",
+          "segment_group_sections": [
+            {
+              "segment_type": "Demographic",
+              "segment_category": "Gender",
+              "segments": [
+                "Female"
+              ]
+            },
+            {
+              "segment_type": "Demographic",
+              "segment_category": "Age",
+              "segments": [
+                "35-39",
+                "40-44",
+                "45-49",
+                "50-54"
+              ]
+            }
+          ],
+          "group_combiner": "AND"
+        },
+        {
+          "segment_group": "Health & Wellness Focus",
+          "segment_group_sections": [
+            {
+              "segment_type": "Interest",
+              "segment_category": "Health",
+              "segments": [
+                "Fitness and Exercise",
+                "Weight Loss",
+                "Herbs and Supplements"
+              ]
+            },
+            {
+              "segment_type": "Purchase Intent",
+              "segment_category": "Recreation",
+              "segments": [
+                "Yoga Studios",
+                "Gyms and Health Clubs",
+                "Personal Trainers"
+              ]
+            }
+          ],
+          "group_combiner": "OR"
+        },
+        {
+          "segment_group": "Skincare Essentials",
+          "segment_group_sections": [
+            {
+              "segment_type": "Purchase Intent",
+              "segment_category": "Beauty",
+              "segments": [
+                "Soap",
+                "Hand & Body Lotion",
+                "Skin Care"
+              ]
+            }
+          ],
+          "group_combiner": "OR"
+        }
+      ]
+    },
+    {
+      "audience_segment": "Seasonal Skincare Transitioners",
+      "audience_segment_rules": [
+        {
+          "segment_group": "Professional Women 35-50",
+          "segment_group_sections": [
+            {
+              "segment_type": "Demographic",
+              "segment_category": "Gender",
+              "segments": [
+                "Female"
+              ]
+            },
+            {
+              "segment_type": "Demographic",
+              "segment_category": "Age",
+              "segments": [
+                "35-39",
+                "40-44",
+                "45-49",
+                "50-54"
+              ]
+            }
+          ],
+          "group_combiner": "AND"
+        },
+        {
+          "segment_group": "Seasonal Focus",
+          "segment_group_sections": [
+            {
+              "segment_type": "Purchase Intent",
+              "segment_category": "Seasonal",
+              "segments": [
+                "Fall Home Products",
+                "Winter Comfort Products"
+              ]
+            }
+          ],
+          "group_combiner": "OR"
+        },
+        {
+          "segment_group": "Natural Health Focus",
+          "segment_group_sections": [
+            {
+              "segment_type": "Interest",
+              "segment_category": "Health",
+              "segments": [
+                "Alternative Medicine",
+                "Holistic Health"
+              ]
+            },
+            {
+              "segment_type": "Interest",
+              "segment_category": "Food",
+              "segments": [
+                "Food Movements",
+                "Healthy Cooking and Eating"
+              ]
+            }
+          ],
+          "group_combiner": "OR"
+        }
+      ]
+    }
+  ]

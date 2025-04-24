@@ -1,0 +1,147 @@
+[
+    {
+      "audience_segment": "Environmental Skincare Enthusiasts",
+      "audience_segment_rules": [
+        {
+          "segment_group": "Kiehl's Skincare Visitors",
+          "segment_group_sections": [
+            {
+              "website_data": [
+                {
+                  "website": "kiehls.com",
+                  "page_categories": ["Skincare"]
+                }
+              ],
+              "recency": 30,
+              "frequency": 2,
+              "description": "all users who have generated at least 2 page views in the last 30 days on Kiehl's skincare pages"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "audience_segment": "Urban Professionals with Skin Protection Interest",
+      "audience_segment_rules": [
+        {
+          "segment_group": "Kiehl's Facial Treatment Researchers",
+          "segment_group_sections": [
+            {
+              "website_data": [
+                {
+                  "website": "kiehls.com",
+                  "page_urls": [
+                    "https://www.kiehls.com/skincare/facial-serums-treatments/"
+                  ]
+                }
+              ],
+              "recency": 45,
+              "frequency": 1,
+              "description": "all users who have generated at least 1 page view in the last 45 days on Kiehl's facial treatments pages"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "audience_segment": "Multi-Category Kiehl's Researchers",
+      "audience_segment_rules": [
+        {
+          "segment_group": "Kiehl's Multi-Category Browsers",
+          "segment_group_sections": [
+            {
+              "website_data": [
+                {
+                  "website": "kiehls.com",
+                  "page_categories": ["Skincare", "Body Care"]
+                }
+              ],
+              "recency": 30,
+              "frequency": 3,
+              "description": "all users who have generated at least 3 page views in the last 30 days across Kiehl's skincare and body care categories"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "audience_segment": "Potential New Kiehl's Customers",
+      "audience_segment_rules": [
+        {
+          "segment_group": "Skincare Researchers Not Visiting Kiehl's",
+          "segment_group_sections": [
+            {
+              "website_data": [
+                {
+                  "website": "lancome.com",
+                  "page_categories": ["Skincare"]
+                }
+              ],
+              "recency": 45,
+              "frequency": 2,
+              "description": "all users who have generated at least 2 page views in the last 45 days on Lancome skincare pages"
+            }
+          ],
+          "group_combiner": "AND NOT"
+        },
+        {
+          "segment_group": "Kiehl's Previous Visitors",
+          "segment_group_sections": [
+            {
+              "website_data": [
+                {
+                  "website": "kiehls.com",
+                  "page_categories": ["Skincare", "Body Care", "Hair Care", "Men's Care"]
+                }
+              ],
+              "recency": 90,
+              "frequency": 1,
+              "description": "all users who have generated at least 1 page view in the last 90 days on any Kiehl's page"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "audience_segment": "Men's Eco-Conscious Market",
+      "audience_segment_rules": [
+        {
+          "segment_group": "Kiehl's Men's Care Visitors",
+          "segment_group_sections": [
+            {
+              "website_data": [
+                {
+                  "website": "kiehls.com",
+                  "page_categories": ["Men's Care"]
+                }
+              ],
+              "recency": 30,
+              "frequency": 1,
+              "description": "all users who have generated at least 1 page view in the last 30 days on Kiehl's men's care pages"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "audience_segment": "High Engagement Kiehl's Audience",
+      "audience_segment_rules": [
+        {
+          "segment_group": "Frequent Kiehl's Visitors",
+          "segment_group_sections": [
+            {
+              "website_data": [
+                {
+                  "website": "kiehls.com",
+                  "page_categories": ["Skincare", "Body Care", "Hair Care", "Men's Care"]
+                }
+              ],
+              "recency": 14,
+              "frequency": 4,
+              "description": "all users who have generated at least 4 page views in the last 14 days on any Kiehl's page, showing high engagement"
+            }
+          ]
+        }
+      ]
+    }
+  ]

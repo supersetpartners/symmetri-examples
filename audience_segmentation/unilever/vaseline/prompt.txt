@@ -1,0 +1,381 @@
+System:
+
+You are an audience planner working at an Ad Agency that specializes in developing highly effective and targeted audience segments 
+for marketing campaigns for various Unilever brands. 
+
+User:
+
+You are an expert in analyzing marketing briefs and identifying segments from a third party data provider that would be relevant 
+for a marketing campaign as defined by the given marketing brief.
+
+Task: Identify all audience segments that can be used in ad campaigs to target users that will resonate with the marketing brief. 
+An audience segment is a collection of rules that use  segments from the list of third party data segments that will be relevant for 
+the marketing brief. Pay special attention to how the audience segments need to be combined using boolean operations: OR, AND, AND NOT.
+
+Look at the example response for reference.
+
+Organize your response in JSON format like so:
+<ExampleResponse>
+[
+  {
+    "audience_segment": "<Generate succinct name based on rules>",
+    "audience_segment_rules": [
+      {
+        "segment_group": "Urban Women 28-40",
+        "segment_group_sections": [
+          {
+            "segment_type": "Demographic",
+            "segment_category": "Gender",
+            "segments": [
+              "Female"
+            ]
+          },
+          {
+            "segment_type": "Demographic",
+            "segment_category": "Age",
+            "segments": [
+              "25-29",
+              "30-34",
+              "35-39",
+              "40-44"
+            ]
+          }
+        ],
+        "group_combiner": "AND"
+      },
+      {
+        "segment_group": "Higher Income",
+        "segment_group_sections": [
+          {
+            "segment_type": "Demographic",
+            "segment_category": "Household Income",
+            "segments": [
+              "$75,000-$99,999",
+              "$100,000-$149,999",
+              "$150,000-$174,999",
+              "$175,000-$199,999",
+              "$200,000-$249,999",
+              "$250,000+"
+            ]
+          }
+        ],
+        "group_combiner": "OR"
+      },
+      {
+        "segment_group": "Sustainability & Beauty Interests",
+        "segment_group_sections": [
+          {
+            "segment_type": "Interest",
+            "segment_category": "Home",
+            "segments": [
+              "Home Improvement",
+              "Interior Decorating"
+            ]
+          },
+          {
+            "segment_type": "Interest",
+            "segment_category": "Fashion",
+            "segments": [
+              "Beauty & Cosmetics",
+              "Personal Care",
+              "Women's Fashion"
+            ]
+          },
+          {
+            "segment_type": "Interest",
+            "segment_category": "Food",
+            "segments": [
+              "Food Movements",
+              "Healthy Cooking and Eating"
+            ]
+          },
+          {
+            "segment_type": "Interest",
+            "segment_category": "Health",
+            "segments": [
+              "Women's Health",
+              "Holistic Health"
+            ]
+          }
+        ],
+        "group_combiner": "OR"
+      }
+    ]
+  },
+  {
+    "audience_segment": "<Generate succinct name based on rules>",
+    "audience_segment_rules": [
+      {
+        "segment_group": "Urban Women 28-40",
+        "segment_group_sections": [
+          {
+            "segment_type": "Demographic",
+            "segment_category": "Gender",
+            "segments": [
+              "Female"
+            ]
+          },
+          {
+            "segment_type": "Demographic",
+            "segment_category": "Age",
+            "segments": [
+              "25-29",
+              "30-34",
+              "35-39",
+              "40-44"
+            ]
+          }
+        ],
+        "group_combiner": "AND"
+      },
+      {
+        "segment_group": "Higher Income",
+        "segment_group_sections": [
+          {
+            "segment_type": "Demographic",
+            "segment_category": "Household Income",
+            "segments": [
+              "$75,000-$99,999",
+              "$100,000-$149,999",
+              "$150,000-$174,999",
+              "$175,000-$199,999",
+              "$200,000-$249,999",
+              "$250,000+"
+            ]
+          }
+        ],
+        "group_combiner": "OR"
+      },
+      {
+        "segment_group": "Personal Care Purchase Intent",
+        "segment_group_sections": [
+          {
+            "segment_type": "Purchase Intent",
+            "segment_category": "Beauty",
+            "segments": [
+              "Skin Care",
+              "Soap",
+              "Hand & Body Lotion"
+            ]
+          },
+          {
+            "segment_type": "Purchase Intent",
+            "segment_category": "Home Care",
+            "segments": [
+              "Household Cleaner"
+            ]
+          },
+          {
+            "segment_type": "Purchase Intent",
+            "segment_category": "Seasonal",
+            "segments": [
+              "Spring Cleaning Products"
+            ]
+          }
+        ],
+        "group_combiner": "OR"
+      }
+    ]
+  }
+]
+</ExampleResponse>
+
+Just return the JSON response and nothing else.
+
+<ThirdPartyDataSegments>
+segment_type,segment_category,segment_name
+Interest,Family,Daycare and Pre-School
+Interest,Family,Internet Safety
+Interest,Family,Parenting Babies and Toddlers
+Interest,Family,Parenting Children Aged 4-11
+Interest,Family,Parenting Teens
+Interest,Business,Food Industry
+Interest,Business,Healthcare Industry
+Interest,Business,Retail Industry
+Interest,Business,Apparel Industry
+Interest,Business,Marketing and Advertising
+Interest,Business,Consumer Issues
+Interest,Business,Financial Reform
+Interest,Health,Children's Health
+Interest,Health,Fitness and Exercise
+Interest,Health,Running and Jogging
+Interest,Health,Men's Health
+Interest,Health,Nutrition
+Interest,Health,Senior Health
+Interest,Health,Weight Loss
+Interest,Health,Alternative Medicine
+Interest,Health,Herbs and Supplements
+Interest,Health,Holistic Health
+Interest,Health,Physical Therapy
+Interest,Health,Smoking Cessation
+Interest,Health,Women's Health
+Interest,Food,Alcoholic Beverages
+Interest,Food,Barbecues and Grilling
+Interest,Food,Cooking
+Interest,Food,Desserts and Baking
+Interest,Food,Dining Out
+Interest,Food,Food Allergies
+Interest,Food,Food Movements
+Interest,Food,Healthy Cooking and Eating
+Interest,Food,Non-Alcoholic Beverages
+Interest,Food,Plant-Based Vegan Diets
+Interest,Food,Plant-Based Vegetarian Diets
+Interest,Food,World Cuisines
+Interest,Home,Gardening
+Interest,Home,Home Entertaining
+Interest,Home,Home Improvement
+Interest,Home,Interior Decorating
+Interest,Home,Landscaping
+Interest,Pets,Cats
+Interest,Pets,Dogs
+Interest,Fashion,Beauty & Cosmetics
+Interest,Fashion,Fashion Trends
+Interest,Fashion,Men's Fashion
+Interest,Fashion,Personal Care
+Interest,Fashion,Women's Fashion
+Purchase Intent,CPG,Baby Food
+Purchase Intent,CPG,Baby Formula/Electrolytes
+Purchase Intent,CPG,Breakfast Food
+Purchase Intent,CPG,Coffee
+Purchase Intent,CPG,Tea - Bags/loose
+Purchase Intent,CPG,Tea/Coffee - Ready-to-Drink
+Purchase Intent,CPG,Snack Bars/Granola Bars
+Purchase Intent,CPG,Snack Nuts/Seeds/Corn Nuts
+Purchase Intent,CPG,Dental Care
+Purchase Intent,CPG,Suntan Products
+Purchase Intent,CPG,Herbs and Supplements
+Purchase Intent,CPG,Alternative Medicine
+Purchase Intent,CPG,Cleaning Tools/Mops/Brooms
+Purchase Intent,CPG,Floor Cleaners/Wax Removers
+Purchase Intent,CPG,Furniture Polish
+Purchase Intent,Recreation,Gyms and Health Clubs
+Purchase Intent,Recreation,Personal Trainers
+Purchase Intent,Recreation,Yoga Studios
+Purchase Intent,Recreation,Self Defense and Martial Arts Classes
+Purchase Intent,Recreation,Swimming Facilities
+Purchase Intent,Clothing,Children's Clothing
+Purchase Intent,Clothing,Men's Clothing
+Purchase Intent,Clothing,Women's Clothing
+Purchase Intent,Clothing,Wedding Dresses/Bridal Wear/Tuxedos
+Purchase Intent,Clothing,Maternity Clothing
+Purchase Intent,Clothing,IUnderwear and Lingerie
+Purchase Intent,Clothing,Sportswear
+Purchase Intent,Accessories,Handbags and Wallets
+Purchase Intent,Accessories,Jewelry and Watches
+Purchase Intent,Accessories,Sunglasses
+Purchase Intent,Footwear,General Footwear
+Purchase Intent,Footwear,Footwear Accessories
+Purchase Intent,Seasonal,Christmas Gifts and Decorations
+Purchase Intent,Seasonal,Hanukkah Gifts and Decorations
+Purchase Intent,Seasonal,New Year Celebrations
+Purchase Intent,Seasonal,Easter Baskets and Candy
+Purchase Intent,Seasonal,Mother's Day Gifts
+Purchase Intent,Seasonal,Father's Day Gifts
+Purchase Intent,Seasonal,Independence Day Celebrations
+Purchase Intent,Seasonal,Halloween Candy and Costumes
+Purchase Intent,Seasonal,Thanksgiving Meal Preparation
+Purchase Intent,Seasonal,Summer Outdoor Products
+Purchase Intent,Seasonal,Winter Comfort Products
+Purchase Intent,Seasonal,Spring Cleaning Products
+Purchase Intent,Seasonal,Fall Home Products
+Purchase Intent,Seasonal,Back-to-School Shopping
+Purchase Intent,Seasonal,College Dorm Room Supplies
+Purchase Intent,Seasonal,Valentine's Day Gifts and Candy
+Purchase Intent,Seasonal,Graduation Celebrations
+Purchase Intent,Seasonal,Baby Shower Gifts
+Purchase Intent,Seasonal,Anniversary Gifts
+Purchase Intent,Seasonal,Vacation Essentials
+Purchase Intent,Seasonal,Winter Travel Products
+Purchase Intent,Beauty,Eye Makeup
+Purchase Intent,Beauty,Face Makeup
+Purchase Intent,Beauty,Lip Products
+Purchase Intent,Beauty,Fragrances - Women's
+Purchase Intent,Beauty,Shaving Lotion/Men's Fragrance
+Purchase Intent,Beauty,Hair Coloring
+Purchase Intent,Beauty,Hair Conditioner
+Purchase Intent,Beauty,Shampoo
+Purchase Intent,Beauty,Deodorant
+Purchase Intent,Beauty,Soap
+Purchase Intent,Beauty,Shaving Cream
+Purchase Intent,Beauty,Hand & Body Lotion
+Purchase Intent,Beauty,Skin Care
+Purchase Intent,Food & Beverages,Carbonated Soft Drinks
+Purchase Intent,Food & Beverages,Coffee & Tea
+Purchase Intent,Food & Beverages,Sports/Energy Drinks
+Purchase Intent,Food & Beverages,Water
+Purchase Intent,Food,Ice Cream/Sherbet
+Purchase Intent,Food,Frozen Meals
+Purchase Intent,Food,Bakery
+Purchase Intent,Food,Baking
+Purchase Intent,Food,Cold Cereal
+Purchase Intent,Food,Candy
+Purchase Intent,Food,Condiments & Sauces
+Purchase Intent,Food,Cookies & Crackers
+Purchase Intent,Food,Savory Snacks
+Purchase Intent,Food,Yogurt
+Purchase Intent,Home Care,Air Fresheners
+Purchase Intent,Home Care,Dish Detergent
+Purchase Intent,Home Care,Household Cleaner
+Purchase Intent,Home Care,Bleach
+Purchase Intent,Home Care,Fabric Softener
+Purchase Intent,Home Care,Laundry Detergent
+Purchase Intent,Baby Care,Diapers
+Demographic,Age,18-20
+Demographic,Age,21-24
+Demographic,Age,25-29
+Demographic,Age,30-34
+Demographic,Age,35-39
+Demographic,Age,40-44
+Demographic,Age,45-49
+Demographic,Age,50-54
+Demographic,Age,55-59
+Demographic,Age,60-64
+Demographic,Age,65-69
+Demographic,Age,70-74
+Demographic,Age,75+
+Demographic,Gender,Female
+Demographic,Gender,Male
+Demographic,Gender,Other
+Demographic,Household Income,"Less than $10,000"
+Demographic,Household Income,"$10,000-$14,999"
+Demographic,Household Income,"$15,000-$19,999"
+Demographic,Household Income,"$20,000-$39,999"
+Demographic,Household Income,"$40,000-$49,999"
+Demographic,Household Income,"$50,000-$74,999"
+Demographic,Household Income,"$75,000-$99,999"
+Demographic,Household Income,"$100,000-$149,999"
+Demographic,Household Income,"$150,000-$174,999"
+Demographic,Household Income,"$175,000-$199,999"
+Demographic,Household Income,"$200,000-$249,999"
+Demographic,Household Income,"$250,000+"
+Demographic,Relationship Status,Co-Habiting
+Demographic,Relationship Status,Married
+Demographic,Relationship Status,Single
+Demographic,Relationship Status,Divorced
+Life Events,Family,New Parents
+Life Events,Family,Parents of Toddlers
+Life Events,Family,Parents of School-Age Children
+Life Events,Family,Parents of Teens
+Life Events,Family,Expectant Parents
+Life Events,Family,Newlyweds
+Life Events,Home,Recent Movers
+</ThirdPartyDataSegments>
+
+<MarketingBrief>
+Unilever Marketing Campaign Brief
+Brand: Vaseline
+Campaign O bjective:
+Position Vaseline as the essential foundation of a simplified self-care ritual that makes women feel they're nurturing their skin's health, not just its appearance.
+Target Audience:
+Professional women, 35-50, who practice mindfulness, are overwhelmed by complex skincare
+routines, and seek to simplify their wellness practices while maintaining effectiveness. They've
+purchased at least one wellness subscription in the past year and value products with proven efficacy over trendy ingredients.
+Key Message:
+"Your skin deserves healing, not just treatment."
+Campaign Timing:
+Fall launch when skin becomes more sensitive to seasonal changes.
+Additional Notes:
+Our target feels skeptical about the ever-increasing number of steps in recommended skincare
+routines. They seek a return to fundamentals that deliver real results. This campaign will position
+Vaseline as the foundational skincare essential that wellness-focused women can trust to truly heal their skin rather than temporarily mask issues.
+</MarketingBrief>

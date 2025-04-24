@@ -1,0 +1,195 @@
+segment_type,segment_category,segment_name
+Interest,Family,Daycare and Pre-School
+Interest,Family,Internet Safety
+Interest,Family,Parenting Babies and Toddlers
+Interest,Family,Parenting Children Aged 4-11
+Interest,Family,Parenting Teens
+Interest,Business,Food Industry
+Interest,Business,Healthcare Industry
+Interest,Business,Retail Industry
+Interest,Business,Apparel Industry
+Interest,Business,Marketing and Advertising
+Interest,Business,Consumer Issues
+Interest,Business,Financial Reform
+Interest,Health,Children's Health
+Interest,Health,Fitness and Exercise
+Interest,Health,Running and Jogging
+Interest,Health,Men's Health
+Interest,Health,Nutrition
+Interest,Health,Senior Health
+Interest,Health,Weight Loss
+Interest,Health,Alternative Medicine
+Interest,Health,Herbs and Supplements
+Interest,Health,Holistic Health
+Interest,Health,Physical Therapy
+Interest,Health,Smoking Cessation
+Interest,Health,Women's Health
+Interest,Food,Alcoholic Beverages
+Interest,Food,Barbecues and Grilling
+Interest,Food,Cooking
+Interest,Food,Desserts and Baking
+Interest,Food,Dining Out
+Interest,Food,Food Allergies
+Interest,Food,Food Movements
+Interest,Food,Healthy Cooking and Eating
+Interest,Food,Non-Alcoholic Beverages
+Interest,Food,Plant-Based Vegan Diets
+Interest,Food,Plant-Based Vegetarian Diets
+Interest,Food,World Cuisines
+Interest,Home,Gardening
+Interest,Home,Home Entertaining
+Interest,Home,Home Improvement
+Interest,Home,Interior Decorating
+Interest,Home,Landscaping
+Interest,Pets,Cats
+Interest,Pets,Dogs
+Interest,Pets,Pet Grooming
+Interest,Pets,Pet Nutrition
+Interest,Pets,Pet Health & Wellness
+Interest,Pets,Pet Travel & Accessories
+Interest,Fashion,Beauty & Cosmetics
+Interest,Fashion,Fashion Trends
+Interest,Fashion,Men's Fashion
+Interest,Fashion,Personal Care
+Interest,Fashion,Women's Fashion
+Interest,Fashion,Sustainable Fashion
+Interest,Fashion,Streetwear
+Interest,Fashion,Athleisure
+Interest,Fashion,Vintage & Retro Fashion
+Interest,Fashion,Designer Fashion
+Interest,Fashion,Fast Fashion
+Interest,Fashion,Ethical & Eco-Friendly Fashion
+Interest,Fashion,Plus-Size Fashion
+Interest,Fashion,Children’s Fashion
+Interest,Fashion,Custom Tailoring & Bespoke
+Interest,Fashion,Fashion Bloggers & Influencers
+Interest,Fashion,Runway & Catwalk Trends
+Purchase Intent,CPG,Baby Food
+Purchase Intent,CPG,Baby Formula/Electrolytes
+Purchase Intent,CPG,Breakfast Food
+Purchase Intent,CPG,Coffee
+Purchase Intent,CPG,Tea - Bags/loose
+Purchase Intent,CPG,Tea/Coffee - Ready-to-Drink
+Purchase Intent,CPG,Snack Bars/Granola Bars
+Purchase Intent,CPG,Snack Nuts/Seeds/Corn Nuts
+Purchase Intent,CPG,Dental Care
+Purchase Intent,CPG,Suntan Products
+Purchase Intent,CPG,Herbs and Supplements
+Purchase Intent,CPG,Alternative Medicine
+Purchase Intent,CPG,Cleaning Tools/Mops/Brooms
+Purchase Intent,CPG,Floor Cleaners/Wax Removers
+Purchase Intent,CPG,Furniture Polish
+Purchase Intent,Recreation,Gyms and Health Clubs
+Purchase Intent,Recreation,Personal Trainers
+Purchase Intent,Recreation,Yoga Studios
+Purchase Intent,Recreation,Self Defense and Martial Arts Classes
+Purchase Intent,Recreation,Swimming Facilities
+Purchase Intent,Clothing,Children's Clothing
+Purchase Intent,Clothing,Men's Clothing
+Purchase Intent,Clothing,Women's Clothing
+Purchase Intent,Clothing,Wedding Dresses/Bridal Wear/Tuxedos
+Purchase Intent,Clothing,Maternity Clothing
+Purchase Intent,Clothing,IUnderwear and Lingerie
+Purchase Intent,Clothing,Sportswear
+Purchase Intent,Accessories,Handbags and Wallets
+Purchase Intent,Accessories,Jewelry and Watches
+Purchase Intent,Accessories,Sunglasses
+Purchase Intent,Footwear,General Footwear
+Purchase Intent,Footwear,Footwear Accessories
+Purchase Intent,Seasonal,Christmas Gifts and Decorations
+Purchase Intent,Seasonal,Hanukkah Gifts and Decorations
+Purchase Intent,Seasonal,New Year Celebrations
+Purchase Intent,Seasonal,Easter Baskets and Candy
+Purchase Intent,Seasonal,Mother's Day Gifts
+Purchase Intent,Seasonal,Father's Day Gifts
+Purchase Intent,Seasonal,Independence Day Celebrations
+Purchase Intent,Seasonal,Halloween Candy and Costumes
+Purchase Intent,Seasonal,Thanksgiving Meal Preparation
+Purchase Intent,Seasonal,Summer Outdoor Products
+Purchase Intent,Seasonal,Winter Comfort Products
+Purchase Intent,Seasonal,Spring Cleaning Products
+Purchase Intent,Seasonal,Fall Home Products
+Purchase Intent,Seasonal,Back-to-School Shopping
+Purchase Intent,Seasonal,College Dorm Room Supplies
+Purchase Intent,Seasonal,Valentine's Day Gifts and Candy
+Purchase Intent,Seasonal,Graduation Celebrations
+Purchase Intent,Seasonal,Baby Shower Gifts
+Purchase Intent,Seasonal,Anniversary Gifts
+Purchase Intent,Seasonal,Vacation Essentials
+Purchase Intent,Seasonal,Winter Travel Products
+Purchase Intent,Beauty,Eye Makeup
+Purchase Intent,Beauty,Face Makeup
+Purchase Intent,Beauty,Lip Products
+Purchase Intent,Beauty,Fragrances - Women's
+Purchase Intent,Beauty,Shaving Lotion/Men's Fragrance
+Purchase Intent,Beauty,Hair Coloring
+Purchase Intent,Beauty,Hair Conditioner
+Purchase Intent,Beauty,Shampoo
+Purchase Intent,Beauty,Deodorant
+Purchase Intent,Beauty,Soap
+Purchase Intent,Beauty,Shaving Cream
+Purchase Intent,Beauty,Hand & Body Lotion
+Purchase Intent,Beauty,Skin Care
+Purchase Intent,Food & Beverages,Carbonated Soft Drinks
+Purchase Intent,Food & Beverages,Coffee & Tea
+Purchase Intent,Food & Beverages,Sports/Energy Drinks
+Purchase Intent,Food & Beverages,Water
+Purchase Intent,Food,Ice Cream/Sherbet
+Purchase Intent,Food,Frozen Meals
+Purchase Intent,Food,Bakery
+Purchase Intent,Food,Baking
+Purchase Intent,Food,Cold Cereal
+Purchase Intent,Food,Candy
+Purchase Intent,Food,Condiments & Sauces
+Purchase Intent,Food,Cookies & Crackers
+Purchase Intent,Food,Savory Snacks
+Purchase Intent,Food,Yogurt
+Purchase Intent,Home Care,Air Fresheners
+Purchase Intent,Home Care,Dish Detergent
+Purchase Intent,Home Care,Household Cleaner
+Purchase Intent,Home Care,Bleach
+Purchase Intent,Home Care,Fabric Softener
+Purchase Intent,Home Care,Laundry Detergent
+Purchase Intent,Baby Care,Diapers
+Purchase Intent,Baby Care,Baby Wipes
+Purchase Intent,Baby Care,Baby Bottles & Accessories
+Purchase Intent,Baby Care,Baby Bath & Hygiene Products
+Purchase Intent,Baby Care,Baby Soaps & Shampoos
+Purchase Intent,Baby Care,Baby Lotions & Oils
+Purchase Intent,Baby Care,Baby Powder
+Purchase Intent,Baby Care,Baby Teethers & Pacifiers
+Purchase Intent,Baby Care,Baby Feeding Accessories
+Purchase Intent,Baby Care,Baby Laundry Detergents
+Purchase Intent,Baby Care,Baby Monitors & Safety Devices
+Demographic,Age,18-20
+Demographic,Age,21-24
+Demographic,Age,25-29
+Demographic,Age,30-34
+Demographic,Age,35-39
+Demographic,Age,40-44
+Demographic,Age,45-49
+Demographic,Age,50-54
+Demographic,Age,55-59
+Demographic,Age,60-64
+Demographic,Age,65-69
+Demographic,Age,70-74
+Demographic,Age,75+
+Demographic,Gender,Female
+Demographic,Gender,Male
+Demographic,Gender,Other
+Demographic,Household Income,"Less than $10,000"
+Demographic,Household Income,"$10,000-$14,999"
+Demographic,Household Income,"$15,000-$19,999"
+Demographic,Household Income,"$20,000-$39,999"
+Demographic,Household Income,"$40,000-$49,999"
+Demographic,Household Income,"$50,000-$74,999"
+Demographic,Household Income,"$75,000-$99,999"
+Demographic,Household Income,"$100,000-$149,999"
+Demographic,Household Income,"$150,000-$174,999"
+Demographic,Household Income,"$175,000-$199,999"
+Demographic,Household Income,"$200,000-$249,999"
+Demographic,Household Income,"$250,000+"
+Demographic,Relationship Status,Co-Habiting
+Demographic,Relationship Status,Married
+Demographic,Relationship Status,Single
+Demographic,Relationship Status,Divorced

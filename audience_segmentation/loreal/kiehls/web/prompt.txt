@@ -1,0 +1,117 @@
+System:
+
+You are an audience planner working at an Ad Agency that specializes in developing highly effective and targeted audience segments 
+for marketing campaigns for various L'Oreal brands.
+
+User:
+
+You are an expert in analyzing marketing briefs and building behavioral audience segments using website traffic patterns that would be relevant for a marketing campaign as defined by the given marketing brief.
+
+Task: Identify all audience segments that can be used in ad campaigs to target users that will resonate with the marketing brief. An audience segment is a collection of rules that represent user behavior and engagement based on website browsing activity that will be relevant for the marketing brief. Pay special attention to how the audience segments need to be combined using boolean operations: OR, AND, AND NOT.
+
+L'Oreal has multiple brands and we need to ensure that visitors to one brand's website are not used in audience segments defined for another brand. Do not include any audience segment groups or sections from website activity on other brands.
+
+Look at the example response for reference.
+
+Organize your response in JSON format like so:
+
+<ExampleResponse>
+[
+  {
+    "audience_segment": "<Generate succinct name based on rules>",
+    "audience_segment_rules": [
+      {
+        "segment_group": "Skincare Enthusiasts",
+        "segment_group_sections": [
+          {
+            "website_data": [
+              {
+                "website": "lancome.com",
+                "page_categories": ["Skincare"]
+              },
+              {
+                "website": "kiehls.com",
+                "page_categories": ["Skincare", "Bodycare"]
+              }
+            ],
+            "recency": 30,
+            "frequency": 3,
+            "description": "all users who have generated at least 3 page views in the last 30 days on the specified websites, page categories, urls"
+          }
+        ],
+        "group_combiner": "OR"
+      }
+    ]
+  },
+  {
+    "audience_segment": "<Generate succinct name based on rules>",
+    "audience_segment_rules": [
+      {
+        "segment_group": "Eyecare Vistors",
+        "segment_group_sections": [
+          {
+            "website_data": [
+              {
+                "website": "maybeline.com",
+                "page_urls": [
+                  "https://www.maybelline.com/eye-makeup/eyeshadow",
+                  "https://www.maybelline.com/eye-makeup/eyeliner"
+                ]
+              }
+            ],
+            "recency": 30,
+            "frequency": 1,
+            "description": "all users who have generated at least 1 page views in the last 30 days on the specified websites, page categories, urls"
+          }
+        ]
+      }
+    ]
+  }
+]
+</ExampleResponse>
+
+Just return the JSON response and nothing else.
+
+<WebsiteUrls>
+website,page_category,page_url
+lancome.com,Makeup,https://www.lancome.com/us/en/makeup/face-makeup/foundation/
+lancome.com,Makeup,https://www.lancome.com/us/en/makeup/eye-makeup/mascara/
+lancome.com,Makeup,https://www.lancome.com/us/en/makeup/lip-makeup/lipstick/
+lancome.com,Skincare,https://www.lancome.com/us/en/skincare/by-category/serums/
+lancome.com,Skincare,https://www.lancome.com/us/en/skincare/by-category/moisturizers/
+lancome.com,Skincare,https://www.lancome.com/us/en/skincare/by-category/eye-care/
+lancome.com,Fragrance,https://www.lancome.com/us/en/fragrance/womens-fragrance/
+lancome.com,Fragrance,https://www.lancome.com/us/en/fragrance/gift-sets/
+maybelline.com,Makeup,https://www.maybelline.com/face-makeup/foundation
+maybelline.com,Makeup,https://www.maybelline.com/eye-makeup/mascara
+maybelline.com,Makeup,https://www.maybelline.com/lip-makeup/lipstick
+maybelline.com,Makeup,https://www.maybelline.com/face-makeup/concealer
+maybelline.com,Makeup,https://www.maybelline.com/eye-makeup/eyeshadow
+maybelline.com,Makeup,https://www.maybelline.com/eye-makeup/eyeliner
+maybelline.com,Makeup,https://www.maybelline.com/face-makeup/powder
+kiehls.com,Skincare,https://www.kiehls.com/skincare/face-cleansers/
+kiehls.com,Skincare,https://www.kiehls.com/skincare/moisturizers/
+kiehls.com,Skincare,https://www.kiehls.com/skincare/facial-serums-treatments/
+kiehls.com,Skincare,https://www.kiehls.com/skincare/eye-and-lip-care/
+kiehls.com,Skincare,https://www.kiehls.com/skincare/face-masks/
+kiehls.com,Body Care,https://www.kiehls.com/body/body-moisturizers-and-treatments/
+kiehls.com,Hair Care,https://www.kiehls.com/hair/shampoos/
+kiehls.com,Men's Care,https://www.kiehls.com/mens/mens-shaving/
+</WebsiteUrls>
+<MarketingBrief>
+Kiehl's "Urban Shield" Sustainability Initiative Brief
+Campaign Objective
+Launch Kiehl's new environmentally-conscious Ultra Environmental Defender SPF 50 while
+strengthening the brand's commitment to sustainability and ethical sourcing.
+Key KPIs
+Acquire 50,000 new customers who haven't previously purchased Kiehl's products
+40% of sales through eco-conscious packaging option
+Increase brand recognition for sustainability efforts by 25%
+Target Audience
+Environmentally conscious urban professionals aged 25-40 who are willing to pay premium prices for products that align with their values. They live in metropolitan areas with high pollution indexes and are educated about the impact of environmental factors on skin health. They actively research brand ethics before purchasing and share their findings with their networks. They
+value transparency and authenticity in marketing.
+Campaign Theme
+"Protect Your Skin, Protect Our Planet"
+Messaging Direction
+Highlight the dual protection benefits: defending skin against environmental aggressors while using sustainable ingredients and packaging. Create educational content about environmental impact on skin health. Partner with environmental influencers and organizations to amplify message.
+</MarketingBrief>

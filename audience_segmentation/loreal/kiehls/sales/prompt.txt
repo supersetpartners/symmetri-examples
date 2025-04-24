@@ -1,0 +1,119 @@
+System:
+
+You are an audience planner working at an Ad Agency that specializes in developing highly effective and targeted audience segments 
+for marketing campaigns for various L'Oreal brands. 
+
+User:
+
+You are an expert in analyzing marketing briefs and building purchase based audience segments using product sales and transaction data 
+that would be relevant for a marketing campaign as defined by the given marketing brief.
+
+Task: Identify all audience segments that can be used in ad campaigns to target users that will resonate with the marketing brief. 
+An audience segment is a collection of rules that represent user purchasing behavior that will be relevant for the marketing brief. 
+Pay special attention to how the audience segments need to be combined using boolean operations: OR, AND, AND NOT.
+
+Purchase based segments can contain rules of two types:
+1. Similar product purchasers: identify users who have bought products similar to the ones being referenced in the marketing brief.
+2. Lapsed product purchasers: identify users who had bought the products referenced in the brief at some time in the past but haven't 
+done so recently.
+
+IMPORTANT: L'Oreal has multiple brands and we need to ensure that users who have bought products from one brand in a particular category 
+are not used in audience segments defined for another brand in the same category. Audience segments for a given brand should only be 
+defined using product categories, types, and products from the same brand.
+
+Look at the example response for reference.
+
+Organize your response in JSON format like so:
+
+<ExampleResponse>
+[
+  {
+    "audience_segment": "<Generate succinct name based on rules>",
+    "audience_segment_rules": [
+      {
+        "segment_group": "Frequent Body Care Purchasers",
+        "segment_group_type": "Similar Purchasers",
+        "segment_group_sections": [
+          {
+            "products": {
+              "brand": "kiehls.com",
+              "categories": ["Body Care"]
+            },
+            "recency": 30,
+            "frequency": 3,
+            "avg_amount": 60.0,
+            "description": "all users who have purchased kiehl's skincare products at least 3 times in the last 30 days for a average amount of at least $60"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "audience_segment": "<Generate succinct name based on rules>",
+    "audience_segment_rules": [
+      {
+        "segment_group": "Lapsed Skincare Purchasers",
+        "segment_group_type": "Lapsed Purchasers",
+        "segment_group_sections": [
+          {
+            "products": {
+              "brand": "kiehls.com",
+              "categories": ["Skincare"]
+            },
+            "recency": -60,
+            "frequency": 1,
+            "description": "all users who have purchased kiehl's skincare products at least once 60 days ago (or earlier) but haven't purchased anything since."
+          }
+        ]
+      }
+    ]
+  }
+]
+</ExampleResponse>
+Just return the JSON response and nothing else.
+<Products>
+product_brand,product_category,product_type,product_name
+lancome.com,Makeup,Foundation,Lancôme Teint Idole Ultra Wear Foundation
+lancome.com,Makeup,Mascara,Lancôme Lash Idôle Mascara
+lancome.com,Makeup,Lipstick,Lancôme L'Absolu Rouge Hydrating Lipstick
+lancome.com,Skincare,Serum,Lancôme Advanced Génifique Face Serum
+lancome.com,Skincare,Moisturizer,Lancôme Rénergie Lift Multi-Action Day Cream
+lancome.com,Skincare,Eye Treatment,Lancôme Advanced Génifique Eye Cream
+lancome.com,Fragrance,Women's Fragrance,Lancôme La Vie Est Belle Eau de Parfum
+lancome.com,Fragrance,Gift Set,Lancôme La Vie Est Belle Gift Set
+maybelline.com,Makeup,Foundation,Maybelline Fit Me Matte + Poreless Foundation
+maybelline.com,Makeup,Mascara,Maybelline Sky High Mascara
+maybelline.com,Makeup,Lipstick,Maybelline SuperStay Matte Ink Liquid Lipstick
+maybelline.com,Makeup,Concealer,Maybelline Instant Age Rewind Concealer
+maybelline.com,Makeup,Eye Shadow,Maybelline The Nudes Eyeshadow Palette
+maybelline.com,Makeup,Eyeliner,Maybelline Eye Studio Lasting Drama Gel Eyeliner
+maybelline.com,Makeup,Face Powder,Maybelline Fit Me Matte + Poreless Powder
+kiehls.com,Skincare,Facial Cleanser,Kiehl's Ultra Facial Cleanser
+kiehls.com,Skincare,Moisturizer,Kiehl's Ultra Facial Cream
+kiehls.com,Skincare,Serum,Kiehl's Midnight Recovery Concentrate
+kiehls.com,Skincare,Eye Treatment,Kiehl's Creamy Eye Treatment with Avocado
+kiehls.com,Skincare,Face Mask,Kiehl's Rare Earth Deep Pore Cleansing Mask
+kiehls.com,Body Care,Body Lotion,Kiehl's Creme de Corps Body Lotion
+kiehls.com,Hair Care,Shampoo,Kiehl's Amino Acid Shampoo
+kiehls.com,Men's Care,Shaving Cream,Kiehl's Ultimate Brushless Shave Cream
+</Products>
+<MarketingBrief>
+Kiehl's "Urban Shield" Sustainability Initiative Brief
+Campaign Objective
+Launch Kiehl's new environmentally-conscious Ultra Environmental Defender SPF 50 while
+strengthening the brand's commitment to sustainability and ethical sourcing.
+Key KPIs      
+Acquire 50,000 new customers who haven't previously purchased Kiehl's products
+40% of sales through eco-conscious packaging option
+Increase brand recognition for sustainability efforts by 25%
+Target Audience
+Environmentally conscious urban professionals aged 25-40 who are willing to pay premium prices for products that align with their values. 
+They live in metropolitan areas with high pollution indexes and are educated about the impact of environmental factors on skin health. They actively research brand ethics before purchasing and share their findings with their networks. They
+value transparency and authenticity in marketing.
+Campaign Theme
+"Protect Your Skin, Protect Our Planet"
+Messaging Direction
+Highlight the dual protection benefits: defending skin against environmental aggressors while using sustainable ingredients and packaging. 
+Create educational content about environmental impact on skin health. Partner with environmental influencers and organizations to 
+amplify message.
+
